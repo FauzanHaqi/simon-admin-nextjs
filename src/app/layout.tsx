@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/page";
-import Sidebar from "@/components/Sidebar/page";
+import SideBar from "@/components/SideBar/page";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["100","200","300", "400","500","600", "700","800"] });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={montserrat.className} suppressHydrationWarning={true}>
         <Navbar />
         <div className="flex">
-          <Sidebar />
+          <SideBar />
           {children}
         </div>
       </body>
