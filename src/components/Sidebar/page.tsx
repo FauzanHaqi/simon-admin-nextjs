@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function SideBar() {
   return (
-    <div className="w-[17vw] h-[90vh] min-h-max bg-[#1B1D2A] py-10 px-2">
+    <div className="w-[18vw] h-[90vh] min-h-max bg-[#1B1D2A] py-10 px-2">
       <div className="flex items-center text-white gap-3 mb-5 px-2">
         <Image
           src={"/images/profile_admin.svg"}

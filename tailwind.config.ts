@@ -13,9 +13,14 @@ const config: Config = {
       colors:{
         'left-linear' : '#37A3FE',
         'right-linear' : '#2995F3',
+        'white-66' : 'rgba(255, 255, 255, 0.66)',
+        'white-60' : 'rgba(255, 255, 255, 0.60)'
       },
       spacing:{
         '18' : '4.5rem',
+      },
+      boxShadow:{
+        'semua-sisi' : 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
       }
     },
   },
