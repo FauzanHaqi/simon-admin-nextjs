@@ -2,6 +2,16 @@ import type { Metadata } from "next";
 
 // These styles apply to every route in the application
 import "./globals.css";
+import { Montserrat } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/Navbar/page";
+import Banner from "@/components/Banner/page";
+import SideBar from "@/components/Sidebar/page";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,6 +26,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
+      <body className={`${montserrat.className} bg-[#EAEAEA]`} suppressHydrationWarning={true}>
+        <Navbar />
+        <div className="flex">
+          <SideBar />
+          <div className="flex flex-col">
+            <Banner title="Home" />
+            <div className="bg-white mt-10 ml-10 shadow-semua-sisi p-8">
+              {children}
+            </div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
