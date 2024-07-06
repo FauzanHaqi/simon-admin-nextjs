@@ -1,19 +1,17 @@
-import Navbar from "@/components/Navbar/page";
-
 export default function TambahDataSiswa() {
   return (
     <div>
-      <h1 className="font-medium text-gray-900 dark:text-black h-6 mx-12 pt-2">
+      <h1 className="font-bold text-gray-900 dark:text-black mx-10">
         Tambah Data
       </h1>
       <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-400" />
 
       <form>
-        <div className="gap-4">
-          <div>
+        <div className="">
+          <div className="mb-2">
             <label
               htmlFor="name"
-              className="mr-7 font-medium text-gray-900 dark:text-black"
+              className="mr-7 font-bold text-gray-900 dark:text-black mx-10"
             >
               Nama :
             </label>
@@ -25,10 +23,10 @@ export default function TambahDataSiswa() {
               required
             />
           </div>
-          <div>
+          <div className="mb-2">
             <label
               htmlFor="name"
-              className="mr-7 font-medium text-gray-900 dark:text-black"
+              className="font-bold text-gray-900 dark:text-black mx-10"
             >
               NIS :
             </label>
@@ -40,10 +38,10 @@ export default function TambahDataSiswa() {
               required
             />
           </div>
-          <div>
+          <div className="mb-2">
             <label
               htmlFor="tempat"
-              className="mr-7 font-medium text-gray-900 dark:text-black"
+              className="font-bold text-gray-900 dark:text-black mx-10"
             >
               Tempat/Tgl Lahir:
             </label>
@@ -55,10 +53,10 @@ export default function TambahDataSiswa() {
               required
             />
           </div>
-          <div>
+          <div className="mb-2">
             <label
               htmlFor="agama"
-              className="mr-7 font-medium text-gray-900 dark:text-black"
+              className="font-bold text-gray-900 dark:text-black mx-10"
             >
               Agama :
             </label>
@@ -70,10 +68,10 @@ export default function TambahDataSiswa() {
               required
             />
           </div>
-          <div>
+          <div className="mb-2">
             <label
               htmlFor="kelas"
-              className="mr-7 font-medium text-gray-900 dark:text-black"
+              className="font-bold text-gray-900 dark:text-black mx-10"
             >
               Kelas :
             </label>
@@ -85,10 +83,10 @@ export default function TambahDataSiswa() {
               required
             />
           </div>
-          <div>
+          <div className="mb-2">
             <label
               htmlFor="jurusan"
-              className="mr-7 font-medium text-gray-900 dark:text-black"
+              className="font-bold text-gray-900 dark:text-black mx-10"
             >
               Jurusan :
             </label>
@@ -100,10 +98,10 @@ export default function TambahDataSiswa() {
               required
             />
           </div>
-          <div>
+          <div className="mb-2">
             <label
               htmlFor="noTelpon"
-              className="mr-7 font-medium text-gray-900 dark:text-black"
+              className="font-bold text-gray-900 dark:text-black mx-10"
             >
               No Telpon :
             </label>
@@ -115,49 +113,48 @@ export default function TambahDataSiswa() {
               required
             />
           </div>
-          <div className="flex items-center space-x-4">
-            <label
-              htmlFor="jenis-kelamin"
-              className="mr-7 font-medium text-gray-900 dark:text-black"
-            >
-              Jenis Kelamin:
-            </label>
-
-            <div className="flex items-center">
-              <input
-                type="radio"
-                id="option1"
-                name="radiogroup"
-                className="form-radio h-4 w-4 text-indigo-600"
-              />
-              <label htmlFor="option1" className="ml-2 text-gray-700">
-                Laki-Laki
+            <div className="flex items-center space-x-4 mb-2">
+              <label
+                htmlFor="jenis-kelamin"
+                className="font-bold text-gray-900 dark:text-black mx-10"
+              >
+                Jenis Kelamin:
               </label>
-            </div>
 
-            <div className="flex items-center">
-              <input
-                type="radio"
-                id="option2"
-                name="radiogroup"
-                className="form-radio h-4 w-4 text-indigo-600"
-              />
-              <label htmlFor="option2" className="ml-2 text-gray-700">
-                Perempuan
-              </label>
+              <div className="flex items-center">
+                <input
+                  type="radio"
+                  id="option1"
+                  name="radiogroup"
+                  className="form-radio h-4 w-4 text-indigo-600"
+                />
+                <label htmlFor="option1" className="ml-2 text-black-700">
+                  Laki-Laki
+                </label>
+              </div>
+
+              <div className="flex items-center">
+                <input
+                  type="radio"
+                  id="option2"
+                  name="radiogroup"
+                  className="form-radio h-4 w-4 text-indigo-600"
+                />
+                <label htmlFor="option2" className="ml-2 text-black-700">
+                  Perempuan
+                </label>
+              </div>
             </div>
-          </div>
 
           <div />
         </div>
-        <div className="m-3">
+        <div className="m-3 space-x-4 ml-auto">
           <button className="p-1.5 rounded-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
             Batalkan
           </button>
           <button className="p-1.5 rounded-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
             Simpan
           </button>
-          {/* <button className="text-biru border border-biru p-1.5 rounded-lg">Batalkan</button> */}
         </div>
       </form>
     </div>
