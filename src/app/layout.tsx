@@ -25,7 +25,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
       <body className={`${montserrat.className} bg-[#EAEAEA]`} suppressHydrationWarning={true}>
         <Navbar />
         <div className="flex">
